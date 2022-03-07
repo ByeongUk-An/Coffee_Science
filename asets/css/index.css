@@ -1,0 +1,45 @@
+/* main 관련 css */
+
+/* main video */
+.sc_video {
+  position: relative;
+}
+.sc_video .bg_video_wrap {
+  width: 100%;
+  height: 840px;
+}
+.sc_video .bg_video_wrap video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  object-fit: fill;
+}
+/* main video text */
+.sc_video .content_wrap {
+  position: relative;
+  top: 238px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.sc_video .content_wrap h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.sc_video .content_wrap h2 span {
+  font-style: italic;
+}
+.sc_video .content_wrap .erf {
+  width: 274px;
+  padding: 14px 38px;
+  border: 2px solid #fff;
+  margin: 0 auto;
+}
+.sc_video .content_wrap .erf a {
+}

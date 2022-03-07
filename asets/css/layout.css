@@ -1,0 +1,81 @@
+@import "../css/reset.css";
+@import "../css/common.css";
+/* body */
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header > .sns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #28211c;
+  height: 42px;
+  padding-right: 48px;
+}
+header > .sns li {
+  padding-left: 18px;
+}
+header > .sns li:hover i {
+  color: rgba(255, 105, 0, 1);
+}
+.nav_wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.nav_wrap .logo_wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* background-color: #000; */
+}
+.nav_wrap h1 {
+  padding: 20px 0;
+}
+.nav_wrap h1 a {
+}
+.nav_wrap h1 a img {
+  width: 80px;
+}
+.nav_wrap .nav {
+  display: flex;
+}
+.nav_wrap .nav li {
+  padding: 12px 18px;
+}
+.nav_wrap .nav li a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+}
+.nav_wrap .nav li .show {
+  display: none;
+  position: absolute;
+  top: 180px;
+  background-color: #28211c;
+  padding: 20px 18px;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+.nav_wrap .nav li:hover .show {
+  display: block;
+}
+.nav_wrap .nav li:last-child {
+  position: relative;
+  right: -640px;
+  cursor: pointer;
+}
+/* footer */

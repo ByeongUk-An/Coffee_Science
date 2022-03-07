@@ -3,6 +3,11 @@
    License: none (public domain)
 */
 
+* {
+  box-sizing: border-box;
+  font: inherit;
+}
+
 html,
 body,
 div,
@@ -126,4 +131,11 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+i {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
 }
