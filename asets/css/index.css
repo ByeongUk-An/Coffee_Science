@@ -10,6 +10,8 @@
 }
 .sc_video .bg_video_wrap video {
   width: 100%;
+  max-width: 1903px;
+  margin: 0 auto;
   height: 100%;
   position: absolute;
   top: 42px;
@@ -21,7 +23,7 @@
 /* main video text */
 .sc_video .content_wrap {
   position: relative;
-  top: 238px;
+  top: 390px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -41,5 +43,170 @@
   border: 2px solid #fff;
   margin: 0 auto;
 }
-.sc_video .content_wrap .erf a {
+.sc_video .content_wrap .erf:hover {
+  background-color: #fff;
+}
+.sc_video .content_wrap .erf:hover a {
+  color: #000;
+}
+/* Uber  */
+.sc_uber {
+  margin-top: 50px;
+  max-width: 1524px;
+}
+.sc_uber .title {
+  text-align: center;
+  margin-bottom: 97px;
+}
+.sc_uber .title span {
+  font-size: 13px;
+  color: #db9457;
+}
+.sc_uber .title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  font-weight: 400;
+  margin: 28px 0 30px;
+}
+.sc_uber .title .divider_line {
+  background-color: #db9457;
+  width: 2px;
+  height: 40px;
+  margin: 0 auto;
+
+  margin-bottom: 30px;
+}
+.sc_uber .title .uber_text {
+}
+.sc_uber .title .uber_text1 {
+  margin: 30px 0;
+}
+.sc_uber .title .uber_text2 {
+}
+
+.uber_text,
+.uber_text1,
+.uber_text2 {
+  line-height: 2;
+  font-size: 17px;
+}
+
+/* mehr */
+.mehr_wrap {
+  width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 105px;
+}
+.mehr_wrap li {
+  padding: 60px;
+  width: calc(100% - 60px);
+  height: 655px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.mehr_wrap li:nth-child(1) {
+  background-image: url(../images/coffeebean-01.jpg);
+}
+.mehr_wrap li:nth-child(2) {
+  background-image: url(../images/coffeebean-latte-art-1.jpg);
+  margin: 0 30px;
+}
+.mehr_wrap li:nth-child(3) {
+  background-image: url(../images/coffeebean-hero-beans-2.jpg);
+}
+.mehr_wrap li span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+.mehr_wrap li h3 {
+  font-size: 32px;
+  margin: 14px 0;
+  line-height: 1.4;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+.mehr_wrap li .line {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  margin: 14px 0 24px;
+}
+.mehr_wrap li a {
+  display: block;
+  text-transform: uppercase;
+  padding: 20px 28px;
+  border: 2px solid #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.mehr_wrap li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* uns */
+.sc_uns {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.sc_uns .uns_text h2 {
+  font-size: 44px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.sc_uns .uns_text p {
+  text-align: center;
+  font-size: 17px;
+  margin: 30px 0;
+}
+.sc_uns .uns_wrap {
+  display: flex;
+  margin-bottom: 80px;
+}
+.sc_uns .uns_wrap li {
+}
+.sc_uns .uns_wrap li a {
+}
+.sc_uns .uns_wrap li a img {
+  width: 100%;
+  height: 375px;
+  transition: 0.3s;
+}
+.sc_uns .uns_wrap li a img:hover {
+  transform: scale(1.1);
+}
+.sc_uns .newsletter_wrap {
+  max-width: 1128px;
+  text-align: center;
+  padding: 60px;
+  background-color: #f6f6f7;
+}
+.sc_uns .newsletter_wrap h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  margin: 12px 0 27px;
+}
+.sc_uns .newsletter_wrap p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+.sc_uns .newsletter_wrap p span {
+  font-weight: bold;
+}
+.sc_uns .newsletter_wrap input {
+  width: 300px;
+  height: 50px;
+}
+.sc_uns .newsletter_wrap button {
+  width: 184px;
+  height: 50px;
 }
