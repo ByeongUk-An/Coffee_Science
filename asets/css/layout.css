@@ -37,11 +37,13 @@ header > .sns li:hover i {
   align-items: center;
   flex-direction: column;
 }
+.nav_wrap.show {
+  background-color: #fff;
+}
 .nav_wrap .logo_wrap {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* background-color: #000; */
 }
 .nav_wrap h1 {
   padding: 20px 0;
@@ -63,6 +65,9 @@ header > .sns li:hover i {
   font-size: 14px;
   position: relative;
 }
+.nav_wrap .nav.show li a {
+  color: #000;
+}
 .nav_wrap .nav li .show {
   display: none;
   position: absolute;
@@ -79,6 +84,9 @@ header > .sns li:hover i {
   position: relative;
   right: -640px;
   cursor: pointer;
+}
+.nav_wrap .nav.show li:last-child i {
+  color: #000;
 }
 /* footer */
 footer {
