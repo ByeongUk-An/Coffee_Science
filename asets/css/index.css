@@ -156,6 +156,7 @@
 .sc_uns {
   max-width: 1128px;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 .sc_uns .uns_text h2 {
   font-size: 44px;
