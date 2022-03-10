@@ -18,6 +18,11 @@ document.addEventListener("scroll", function () {
 });
 search.addEventListener("click", function () {
   searchCon.classList.toggle("show");
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 });
 close.addEventListener("click", function () {
   searchCon.classList.toggle("show");
