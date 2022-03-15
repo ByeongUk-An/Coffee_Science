@@ -8,6 +8,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./asets/css/layout.css" />
     <link rel="stylesheet" href="./asets/css/index.css" />
+    <!-- XEICON -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
@@ -28,7 +33,7 @@
       <!-- header_search 시작 -->
       <div class="search_content">
         <div class="input_box">
-          <input type="text" placeholder="Search here" />
+          <input type="text" placeholder="Search here" class="search_input" />
           <p>Type and press Enter</p>
         </div>
         <i class="fa-solid fa-xmark close"></i>
@@ -51,6 +56,11 @@
         </ul>
         <div class="nav_wrap">
           <div class="logo_wrap">
+            <a class="menu-trigger" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
             <h1>
               <a href="#" class="logo">
                 <img
@@ -61,13 +71,15 @@
                 <span class="blind">Logo</span>
               </a>
             </h1>
+            <i class="fa-solid fa-magnifying-glass mb"></i>
           </div>
+
           <ul class="nav">
             <li><a href="#">Magazin</a></li>
             <li>
               <a href="#">
                 Kaffeewissen
-                <i class="fa-regular fa-angle-down"></i>
+                <i class="fa-regular fa-angle-down mb"></i>
                 <div class="show">
                   <a href="#">Espresso Bestenliste <br />2022</a>
                 </div>
@@ -77,7 +89,7 @@
             <li>
               <a href="#">
                 Zubehör
-                <i class="fa-regular fa-angle-down"></i>
+                <i class="fa-regular fa-angle-down mb"></i>
                 <div class="show">
                   <a href="#">Espresso Bestenliste <br />2022</a>
                 </div>
@@ -110,6 +122,7 @@
         </div>
       </section>
       <!-- video 끝 -->
+
       <section class="sc_uber sc">
         <div class="title">
           <span>BECAUSE WE LOVE COFFEE</span>
@@ -231,6 +244,7 @@
       </footer>
     </div>
     <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

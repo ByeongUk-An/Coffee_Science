@@ -51,7 +51,7 @@
 }
 /* Uber  */
 .sc_uber {
-  margin-top: 50px;
+  padding-top: 80px;
   max-width: 1524px;
 }
 .sc_uber .title {
@@ -93,7 +93,7 @@
 
 /* mehr */
 .mehr_wrap {
-  width: 1400px;
+  max-width: calc(100% - 60px);
   display: flex;
   margin: 0 auto;
   margin-bottom: 105px;
@@ -167,6 +167,7 @@
   text-align: center;
   font-size: 17px;
   margin: 30px 0;
+  padding: 30px;
 }
 .sc_uns .uns_wrap {
   display: flex;
@@ -182,7 +183,8 @@
   transition: 0.3s;
 }
 .sc_uns .uns_wrap li a img:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  opacity: 0.5;
 }
 .sc_uns .newsletter_wrap {
   max-width: 1128px;
@@ -206,8 +208,74 @@
 .sc_uns .newsletter_wrap input {
   width: 300px;
   height: 50px;
+  padding-left: 15px;
 }
 .sc_uns .newsletter_wrap button {
   width: 184px;
   height: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .mehr_wrap {
+    max-width: calc(100% - 60px);
+    margin: 0 30px;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .mehr_wrap li {
+    padding: 30px !important;
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 30px !important;
+  }
+  .mehr_wrap li:nth-child(1),
+  .mehr_wrap li:nth-child(2),
+  .mehr_wrap li:nth-child(3) {
+    /* width: 100%; */
+    /* margin: 0; */
+  }
+  .mehr_wrap li:nth-child(2) {
+    margin: 0 0 30px 0;
+  }
+  .mehr_wrap li a {
+    width: 50%;
+  }
+  .sc_uns .uns_wrap {
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mehr_wrap li {
+    height: 600px;
+  }
+  .sc_uns .newsletter_wrap {
+    padding: 30px;
+  }
+  .sc_uns .newsletter_wrap input {
+    width: 100%;
+    margin-bottom: 10px;
+
+    border: 1px solid grey;
+  }
+  .sc_uns .newsletter_wrap input::placeholder {
+    text-align: center;
+  }
+  .sc_uns .newsletter_wrap button {
+    width: 100%;
+  }
+  footer .footer_widget_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_widget_wrap aside {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer_info_wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mehr_wrap li a {
+    width: 70%;
+  }
 }
