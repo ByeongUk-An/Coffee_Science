@@ -1,0 +1,32 @@
+/* Magazin main */
+.main-wrapper {
+  max-width: 100%;
+  width: 1248px;
+  margin: 0 auto;
+  padding-top: 170px;
+}
+.primary-wrapper {
+  height: 3170px;
+  padding: 24px 0;
+  display: flex;
+}
+.primary-wrapper .primary {
+  /* max-width: calc(100% - 348px - 24px); */
+  width: 876px;
+  margin-right: 24px;
+  background-color: tomato;
+  height: 100%;
+}
+.primary .masonry {
+  padding: 12px;
+}
+.primary .post-masonry {
+}
+
+/* sidebar */
+.primary-wrapper .sidebar-archives {
+  max-width: 100%;
+  width: 348px;
+  height: 100%;
+  background-color: powderblue;
+}
