@@ -6,22 +6,28 @@
   padding-top: 170px;
 }
 .primary-wrapper {
-  height: 3170px;
+  /* height: 3170px; */
   padding: 24px 0;
   display: flex;
 }
 .primary-wrapper .primary {
   /* max-width: calc(100% - 348px - 24px); */
+  max-width: 876px;
   width: 876px;
   margin-right: 24px;
-
-  height: 100%;
+  /* height: 100%; */
+  display: flex;
 }
 .primary .masonry {
   padding: 12px;
   max-width: 414px;
+  width: 100%;
   background-color: #fff;
+  margin: 12px 12px 30px 12px;
+  display: flex;
+  flex-direction: column;
 }
+
 .primary .post-masonry {
   /* width: 100%; */
 }
@@ -29,13 +35,19 @@
   margin: 0 auto;
   max-width: 384px;
   width: 100%;
+  overflow: hidden;
 }
 .masonry .post-img-wrap > a {
 }
 .masonry .post-img-wrap > a img {
   display: block;
+  max-width: 384px;
   width: 100%;
   height: 256px;
+  transition: 0.5s;
+}
+.masonry .post-img-wrap > a img:hover {
+  transform: scale(1.1);
 }
 .masonry .categori {
   text-align: center;
@@ -47,6 +59,59 @@
   font-size: 13px;
   letter-spacing: 3px;
   font-weight: 600;
+}
+.masonry .entry-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.masonry .entry-title > a {
+  color: #28211c;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+}
+.masonry .entry-title > a:hover {
+  color: #db9457;
+}
+
+.masonry .entry-text {
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.masonry .lesen-wrap {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.masonry .lesen-wrap:hover {
+}
+.masonry .lesen-wrap span {
+  color: #f6c158;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 10px 38px;
+}
+.masonry .lesen-wrap span:hover {
+  background-color: #f6c158;
+  color: #000;
+}
+.masonry .post-share {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.masonry .post-share a {
+  color: #64646989;
+  padding: 0 5px;
+  font-size: 17px;
+}
+.masonry .post-share a span {
+}
+.masonry .post-share a i {
+  color: #000;
 }
 
 /* sidebar */
