@@ -49,6 +49,12 @@ header > .sns li:hover i {
 .nav_wrap .logo_wrap .mb {
   display: none;
 }
+.logo_img.pc {
+  display: block;
+}
+.logo_img.mobile {
+  display: none;
+}
 .nav_wrap h1 {
   padding: 20px 0;
 }
@@ -58,6 +64,7 @@ header > .sns li:hover i {
   width: 80px;
 }
 .nav_wrap .nav {
+  display: block;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -76,6 +83,7 @@ header > .sns li:hover i {
   text-transform: uppercase;
   font-size: 14px;
   position: relative;
+  color: #000;
 }
 .nav_wrap .nav.show li a {
   color: #000;
@@ -166,6 +174,10 @@ header > .sns li:hover i {
   font-size: 42px;
   font-weight: 700;
   background-color: transparent;
+}
+
+.input_box input:focus::placeholder {
+  color: transparent;
 }
 .input_box p {
   color: #fff;
@@ -290,8 +302,18 @@ footer .footer_widget_wrap .img_wrap img {
 @media screen and (max-width: 992px) {
   header > .sns {
     justify-content: center;
+    padding-right: 0;
+  }
+  .logo_img.pc {
+    display: none;
+  }
+  .logo_img.mobile {
+    display: block;
   }
 
+  .nav_wrap {
+    background-color: #000;
+  }
   .nav_wrap .logo_wrap {
     justify-content: space-between;
     align-items: center;
@@ -320,10 +342,11 @@ footer .footer_widget_wrap .img_wrap img {
     background-color: #fff;
     /* padding-top: 100px; */
     align-items: center;
-    display: none;
+    display: block;
     padding-left: 30px;
   }
-  .nav_wrap .nav.show {
+
+  .nav_wrap .nav {
     display: block;
   }
 
@@ -396,5 +419,35 @@ footer .footer_widget_wrap .img_wrap img {
   } */
   .mobile_nav > i {
     cursor: pointer;
+  }
+  .nav_wrap .nav {
+    display: none;
+  }
+  .nav_wrap .nav.show {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* .follow_wrap {
+    margin-right: 15px;
+  }
+  .footer_info_wrap {
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1.2px;
+  } */
+
+  footer .footer_widget_wrap {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .footer_widget_wrap aside {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer_info_wrap {
+    flex-direction: column;
+    text-align: center;
   }
 }

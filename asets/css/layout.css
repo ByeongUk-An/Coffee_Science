@@ -159,6 +159,9 @@ header > .sns li:hover i {
   font-weight: 700;
   background-color: transparent;
 }
+.input_box input:focus::placeholder {
+  color: transparent;
+}
 .input_box p {
   color: #fff;
   text-align: center;
@@ -282,6 +285,10 @@ footer .footer_widget_wrap .img_wrap img {
 @media screen and (max-width: 992px) {
   header > .sns {
     justify-content: center;
+    padding-right: 0;
+  }
+  .sc_video .content_wrap h2 {
+    font-size: 20px;
   }
 
   .nav_wrap .logo_wrap {
@@ -296,6 +303,12 @@ footer .footer_widget_wrap .img_wrap img {
   .nav_wrap .logo_wrap .mb {
     display: block;
     cursor: pointer;
+  }
+  .nav_wrap.show .logo_wrap .mb {
+    color: #000;
+  }
+  .nav_wrap.show .logo_wrap .menu-trigger span {
+    background-color: #000;
   }
   .nav_wrap .logo_wrap.show .menu-trigger span {
     background-color: #000;
@@ -320,7 +333,7 @@ footer .footer_widget_wrap .img_wrap img {
   }
 
   .nav_wrap.show {
-    background-color: #000;
+    background-color: #fff;
   }
   .nav_wrap .nav li {
     width: 96%;
@@ -388,5 +401,19 @@ footer .footer_widget_wrap .img_wrap img {
   } */
   .mobile_nav > i {
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer_widget_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_widget_wrap aside {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer_info_wrap {
+    flex-direction: column;
+    text-align: center;
   }
 }

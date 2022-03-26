@@ -6,7 +6,8 @@ const searchCon = document.querySelector(".search_content");
 const search = document.querySelector(".search");
 const mb = document.querySelector(".mb");
 const searchinput = document.querySelector(".search_input");
-
+const sns = document.querySelector(".sns");
+let size = window.innerWidth;
 // document.addEventListener("scroll", function () {
 //   let currentScrollValue = document.documentElement.scrollTop;
 //   if (currentScrollValue > 100) {
@@ -21,6 +22,23 @@ const searchinput = document.querySelector(".search_input");
 //     logo.src = "./asets/images/logo-before.png";
 //   }
 // });
+
+let innerWidth = window.innerWidth;
+innerWidth <= "992"
+  ? (logo.src = "./asets/images/logo-before.png")
+  : (logo.src = "./asets/images/logo-after.png");
+
+window.onresize = function (event) {
+  let innerWidth = window.innerWidth;
+  innerWidth <= "992"
+    ? (logo.src = "./asets/images/logo-before.png")
+    : (logo.src = "./asets/images/logo-after.png");
+
+  // innerWidth <= "992"
+  //   ? (sns.style.display = "none")
+  //   : (sns.style.display = "flex");
+};
+
 search.addEventListener("click", function () {
   searchCon.classList.toggle("show");
   window.scrollTo({
