@@ -108,3 +108,125 @@ burger.each(function (index) {
     }
   });
 });
+
+const headTl = gsap.timeline({
+  defaults: {},
+});
+
+headTl
+  .from("header .logo_img", {
+    opacity: 0,
+    delay: 0.5,
+  })
+  .from("header .nav", {
+    yPercent: 40,
+    duration: 0.5,
+    stagger: 0.1,
+    opacity: 0,
+  })
+  .from(".sc_video .erf", {
+    yPercent: 40,
+    duration: 2.7,
+    stagger: 0.1,
+    opacity: 0,
+  });
+
+const headTxt = new SplitType(".section_content h2", { types: "words, chars" });
+// headTxt.chars
+gsap.from(headTxt.chars, {
+  // scrollTrigger: {
+  //   trigger: ".wrapper",
+  //   start: "top top", //트리거 기준잡은 엘리먼트 //윈도우기준
+  //   end: "bottom bottom",
+  //   markers: true,
+  // },
+  yPercent: 20,
+  duration: 0.5,
+  opacity: 0,
+  stagger: 0.04,
+  delay: 1,
+});
+
+gsap.from(".sc_uber .title", {
+  scrollTrigger: {
+    trigger: ".sc_uber",
+    start: "-800",
+    end: "top top",
+  },
+  yPercent: 20,
+  duration: 0.5,
+  opacity: 0,
+  stagger: 0.04,
+  delay: 1,
+  // markers: true,
+});
+
+$(".mehr_wrap").each(function (index, item) {
+  const triggerEl = $(this).find("li");
+  gsap.from(triggerEl, {
+    scrollTrigger: {
+      trigger: ".mehr_wrap",
+      start: "-800",
+      end: "top top",
+      markers: true,
+    },
+    yPercent: 40,
+    duration: 1,
+    stagger: 0.1,
+    opacity: 0,
+  });
+});
+
+gsap.from(".sc_uns .uns_text", {
+  scrollTrigger: {
+    trigger: ".sc_uns",
+    start: "-1400",
+    end: "top top",
+    markers: true,
+  },
+  duration: 0.5,
+  opacity: 0,
+  stagger: 0.04,
+  delay: 2,
+});
+
+gsap.from(".sc_uns .gs-li1", {
+  scrollTrigger: {
+    trigger: ".sc_uns",
+    start: "-1100",
+    end: "top top",
+    markers: true,
+  },
+  xPercent: -30,
+  duration: 0.5,
+  opacity: 0,
+  stagger: 0.04,
+  delay: 1.8,
+});
+
+gsap.from(".sc_uns .gs-li2", {
+  scrollTrigger: {
+    trigger: ".sc_uns",
+    start: "-1100",
+    end: "top top",
+    markers: true,
+  },
+  // yPercent: 50,
+  duration: 4,
+  opacity: 0,
+  stagger: 0.04,
+  delay: 1.5,
+});
+gsap.from(".sc_uns .gs-li3", {
+  scrollTrigger: {
+    trigger: ".sc_uns",
+    start: "-1100",
+    end: "top top",
+    markers: true,
+  },
+  xPercent: 30,
+  duration: 0.5,
+  opacity: 0,
+  stagger: 0.04,
+  delay: 1.8,
+});
