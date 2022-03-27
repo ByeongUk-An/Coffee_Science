@@ -21,8 +21,6 @@ document.addEventListener("scroll", function () {
     navWrap.classList.add("show");
     nav.classList.add("show");
     logo.src = "./asets/images/logo-after.png";
-    if (window.innerWidth >= 992) {
-    }
 
     if (window.innerWidth <= 992) {
       if (burger.hasClass("active-2") === false) {
