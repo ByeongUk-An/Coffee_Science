@@ -138,7 +138,7 @@ gsap.from(headTxt.chars, {
   //   trigger: ".wrapper",
   //   start: "top top", //트리거 기준잡은 엘리먼트 //윈도우기준
   //   end: "bottom bottom",
-  //   markers: true,
+
   // },
   yPercent: 20,
   duration: 0.5,
@@ -158,7 +158,6 @@ gsap.from(".sc_uber .title", {
   opacity: 0,
   stagger: 0.04,
   delay: 1,
-  // markers: true,
 });
 
 $(".mehr_wrap").each(function (index, item) {
@@ -168,7 +167,6 @@ $(".mehr_wrap").each(function (index, item) {
       trigger: ".mehr_wrap",
       start: "-800",
       end: "top top",
-      markers: true,
     },
     yPercent: 40,
     duration: 1,
@@ -182,7 +180,6 @@ gsap.from(".sc_uns .uns_text", {
     trigger: ".sc_uns",
     start: "-1400",
     end: "top top",
-    markers: true,
   },
   duration: 0.5,
   opacity: 0,
@@ -195,7 +192,6 @@ gsap.from(".sc_uns .gs-li1", {
     trigger: ".sc_uns",
     start: "-1100",
     end: "top top",
-    markers: true,
   },
   xPercent: -30,
   duration: 0.5,
@@ -209,7 +205,6 @@ gsap.from(".sc_uns .gs-li2", {
     trigger: ".sc_uns",
     start: "-1100",
     end: "top top",
-    markers: true,
   },
   // yPercent: 50,
   duration: 4,
@@ -222,7 +217,6 @@ gsap.from(".sc_uns .gs-li3", {
     trigger: ".sc_uns",
     start: "-1100",
     end: "top top",
-    markers: true,
   },
   xPercent: 30,
   duration: 0.5,
