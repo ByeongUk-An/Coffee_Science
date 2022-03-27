@@ -122,9 +122,22 @@
   margin-top: 12px;
   position: relative;
 }
+.sidebar-wrap {
+  position: static;
+  top: 0;
+}
 .sidebar-wrap.show {
   position: absolute;
+  transform: translateY(10);
+  top: 0;
+  width: 348px;
   /* top: 30px; */
+}
+.sidebar-wrap.show1 {
+  position: fixed;
+  transform: translateY(-1830.56px);
+  top: 0px;
+  width: 348px;
 }
 .sidebar-wrap.showfix {
   position: fixed;
