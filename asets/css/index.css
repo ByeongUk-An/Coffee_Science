@@ -10,7 +10,7 @@
 }
 .sc_video .bg_video_wrap video {
   width: 100%;
-  max-width: 1903px;
+  /* max-width: 1903px; */
   margin: 0 auto;
   height: 100%;
   position: absolute;

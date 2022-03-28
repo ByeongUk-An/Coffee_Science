@@ -65,21 +65,19 @@ const fix = document.querySelector(".sidebar-wrap");
 
 document.addEventListener("scroll", function () {
   let sideHeight = document.documentElement.scrollTop;
-  console.log(sideHeight);
-  if (sideHeight <= 500) {
-    fix.classList.remove("show");
-  }
-  if (sideHeight >= 600) {
-    fix.classList.add("show");
-    fix.classList.remove("show1");
-  }
-  if (sideHeight >= 2200) {
-    fix.classList.remove("show");
-    fix.classList.add("show1");
-  }
-  if (window.innerWidth <= 768) {
-    fix.classList.remove("show");
-    fix.classList.remove("show1");
+
+  if (window.innerWidth >= 768) {
+    if (sideHeight <= 500) {
+      fix.classList.remove("show");
+    }
+    if (sideHeight >= 600) {
+      fix.classList.add("show");
+      fix.classList.remove("show1");
+    }
+    if (sideHeight >= 2200) {
+      fix.classList.remove("show");
+      fix.classList.add("show1");
+    }
   }
 });
 

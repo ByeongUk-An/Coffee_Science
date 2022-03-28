@@ -21,7 +21,6 @@ document.addEventListener("scroll", function () {
     navWrap.classList.add("show");
     nav.classList.add("show");
     logo.src = "./asets/images/logo-after.png";
-
     if (window.innerWidth <= 992) {
       if (burger.hasClass("active-2") === false) {
         nav.classList.remove("show");
@@ -195,7 +194,7 @@ gsap.from(".sc_uns .gs-li1", {
   duration: 0.5,
   opacity: 0,
   stagger: 0.04,
-  delay: 1.8,
+  delay: 1,
 });
 
 gsap.from(".sc_uns .gs-li2", {
@@ -208,7 +207,7 @@ gsap.from(".sc_uns .gs-li2", {
   duration: 4,
   opacity: 0,
   stagger: 0.04,
-  delay: 1.5,
+  delay: 1,
 });
 gsap.from(".sc_uns .gs-li3", {
   scrollTrigger: {
@@ -220,5 +219,5 @@ gsap.from(".sc_uns .gs-li3", {
   duration: 0.5,
   opacity: 0,
   stagger: 0.04,
-  delay: 1.8,
+  delay: 1,
 });
