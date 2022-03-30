@@ -83,7 +83,7 @@ header > .sns li:hover i {
 .nav_wrap .nav li .show {
   display: none;
   position: absolute;
-  top: 180px;
+  top: 35px;
   background-color: #28211c;
   padding: 20px 18px;
   letter-spacing: 2px;
